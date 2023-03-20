@@ -1,20 +1,20 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 15px;
-    justify-content: space-evenly;
-    background-color: #F8EDE3;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-evenly;
+  /* background-color: #F8EDE3; */
 }
 
 button {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    background: #D0B8A8;
-    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #d0b8a8;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* .container.active {

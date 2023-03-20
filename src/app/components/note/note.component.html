@@ -1,5 +1,4 @@
-<div class="card" *ngFor="let note of notes">
+<div class="card">
     <div class="title">{{note.title}}</div>
-    <hr>
-    <div class="body">{{note.description}}</div>
+    <div class="body">{{note.description | shrink}}</div>
 </div>

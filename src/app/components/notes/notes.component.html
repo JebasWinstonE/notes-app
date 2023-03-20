@@ -1,5 +1,7 @@
 <div class="container">
-    <app-note></app-note>
+    <div class="note" *ngFor="let note of notes">
+        <app-note [note]="note"></app-note>
+    </div>
     <button routerLink="/notes/new"><img src="assets/plus.svg" alt="add"></button>
 </div>
 <div class="pop-up">

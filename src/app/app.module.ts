@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NotesComponent } from './components/notes/notes.component';
 import { NoteComponent } from './components/note/note.component';
 import { PopupComponent } from './components/popup/popup.component';
+import { ShrinkPipe } from './pipes/shrink.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PopupComponent } from './components/popup/popup.component';
     HomeComponent,
     NotesComponent,
     NoteComponent,
-    PopupComponent
+    PopupComponent,
+    ShrinkPipe
   ],
   imports: [
     BrowserModule,
