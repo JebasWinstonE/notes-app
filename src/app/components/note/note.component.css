@@ -1,0 +1,30 @@
+.card {
+    width: 200px;
+    height: 300px;
+    background: #DFD3C3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    align-self: top;
+    font-weight: bold;
+    padding: 5px;
+    color: rgb(50, 50, 50);
+}
+
+hr {
+    border: solid 1px;
+    width: 125px;
+}
+
+.body {
+    padding: 5px;
+    word-break: break-all;
+}

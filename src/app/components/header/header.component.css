@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    height: 65px;
+    background-color: #85586F;
+    align-items: center;
+    padding: 10px;
+}
+
+.app-name {
+    font-size: 25px;
+    color: white;
+}
