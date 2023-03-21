@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { NotesComponent } from './components/notes/notes.component';
 import { NoteComponent } from './components/note/note.component';
 import { PopupComponent } from './components/popup/popup.component';
 import { ShrinkPipe } from './pipes/shrink.pipe';
+import { FactsComponent } from './components/facts/facts.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { ShrinkPipe } from './pipes/shrink.pipe';
     NotesComponent,
     NoteComponent,
     PopupComponent,
-    ShrinkPipe
+    ShrinkPipe,
+    FactsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

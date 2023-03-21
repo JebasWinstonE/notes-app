@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ShrinkPipe implements PipeTransform {
   transform(value: string) {
-    if (value.length > 300) {
-      return value.slice(0, 300) + '...';
+    if (value.length > 170) {
+      return value.slice(0, 170) + '...';
     } else {
       return value;
     }

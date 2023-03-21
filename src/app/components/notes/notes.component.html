@@ -1,3 +1,6 @@
+<div class="facts">
+    <app-facts *ngIf="flag" (showFactEvent)="factStatus($event)"></app-facts>
+</div>
 <div class="container">
     <div class="note" *ngFor="let note of notes">
         <app-note [note]="note"></app-note>

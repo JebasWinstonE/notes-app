@@ -13,4 +13,5 @@ export class PopupComponent {
   addNote(title: string, desc: string) {
     this.notesService.insertNote(title, desc)
   }
+
 }

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FDF5E6;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    padding: 15px;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+}

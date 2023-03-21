@@ -5,7 +5,7 @@
   color: #85586f;
   justify-content: space-between;
   align-items: center;
-  height: 600px;
+  height: 575px;
   width: 400px;
   padding: 30px;
   position: absolute;
@@ -38,7 +38,10 @@ input {
   border-radius: 10px;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin: 10px;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: auto;
   font-size: medium;
 }
 
@@ -49,7 +52,7 @@ input {
   justify-content: space-between;
   width: 300px;
   padding: 10px;
-  height: 290px;
+  height: 300px;
 }
 
 textarea {
@@ -58,7 +61,10 @@ textarea {
   border-radius: 10px;
   box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 10px;
-  margin: 10px;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: auto;
   font-size: medium;
 }
 
@@ -66,6 +72,10 @@ textarea {
   display: flex;
   justify-content: space-around;
   width: 250px;
+  position: relative;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 
 button {

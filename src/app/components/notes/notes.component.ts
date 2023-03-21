@@ -13,7 +13,16 @@ export class NotesComponent {
   //   this.popUp = !this.popUp
   //   console.log(this.popUp);
   // }
+  flag: boolean = true;
+  notes: Note[] = []
 
-  constructor(private notesService: NotesService) {}
-  notes: Note[] = this.notesService.notes;
+  constructor(private notesService: NotesService) { }
+
+  ngOnInit() {
+    this.notes = this.notesService.notes;
+  }
+
+  factStatus(value: boolean) {
+    this.flag = value
+  }
 }

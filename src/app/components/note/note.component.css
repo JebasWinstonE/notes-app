@@ -2,10 +2,6 @@
   width: 250px;
   height: 300px;
   background: #dfd3c3;
-  /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 40px 1px auto;
@@ -23,6 +19,7 @@
   grid-area: title;
   align-self: top;
   font-weight: bold;
+  font-size: 20px;
   padding: 5px;
   color: rgb(50, 50, 50);
 }
