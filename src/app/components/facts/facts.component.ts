@@ -14,14 +14,19 @@ export class FactsComponent {
 
   show: boolean = true;
   data: any = [];
+  observable$: Observable<Fact[]> = new Observable;
   // data = "Annually 7 million tons of textiles and clothing is thrown out. Out of this, only 12% is used again or recycled."
-  ngOnInit() {
-    this.factService.getFact().subscribe(value => {
-      this.data = value[0].fact;
-    })
-  }
 
   @Output() showFactEvent: EventEmitter<boolean> = new EventEmitter<boolean>()
+  ngOnInit() {
+    // this.factService.getFact().subscribe(value => {
+    //   this.data = value[0].fact;
+    // })
+
+    this.observable$ = this.factService.getFact();
+    // this.showFactEvent.emit(this.show);
+  }
+
   toggle() {
     this.show = !this.show;
     this.showFactEvent.emit(this.show);

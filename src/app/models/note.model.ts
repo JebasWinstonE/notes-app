@@ -1,6 +1,7 @@
 export class Note {
-    public title: string;
     public description: string;
+    public title: string;
+    public id: string;
 
     constructor(title: string, desc: string) {
         this.title = title;

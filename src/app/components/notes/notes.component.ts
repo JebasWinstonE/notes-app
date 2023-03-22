@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Note } from 'src/app/models/note.model';
 import { NotesService } from 'src/app/services/notes.service';
 
@@ -14,12 +15,12 @@ export class NotesComponent {
   //   console.log(this.popUp);
   // }
   flag: boolean = true;
-  notes: Note[] = []
+  notes$: Observable<Note[]> = new Observable
 
   constructor(private notesService: NotesService) { }
 
   ngOnInit() {
-    this.notes = this.notesService.notes;
+    this.notes$ = this.notesService.getAllNotes();
   }
 
   factStatus(value: boolean) {

@@ -8,6 +8,6 @@ import { NotesService } from 'src/app/services/notes.service';
   styleUrls: ['./note.component.css'],
 })
 export class NoteComponent {
-  constructor(private notesService: NotesService) {}
-  @Input() note: Note = new Note('', '');
+  constructor(private notesService: NotesService) { }
+  @Input() note: Note;
 }

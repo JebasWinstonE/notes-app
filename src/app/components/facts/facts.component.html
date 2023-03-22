@@ -1,7 +1,8 @@
 <div class="container">
     <div class="contents">
         <h2>Do you know?</h2>
-        <p>{{data}}</p>
+        <!-- <p *ngIf="observable$ | async as facts">{{facts.pop()?.fact}}</p> -->
+        <p *ngIf="observable$ | async as fact">{{fact[0].fact}}</p>
     </div>
     <div class="close">
         <button (click)="toggle()"><img src="assets/close.svg" alt="close"></button>
