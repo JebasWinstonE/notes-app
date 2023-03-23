@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="header">
+        <p>Edit Note</p>
+    </div>
+    <div class="title">
+        <p>Title</p>
+        <input type="text" #title required>
+    </div>
+    <div class="content">
+        <p>Description</p>
+        <textarea cols="30" rows="10" #desc></textarea>
+    </div>
+    <div class="actions">
+        <button style="background-color: lightcoral;" routerLink="/">Cancel</button>
+        <button style="background-color: rgb(86, 214, 86);" (click)="addNote(title.value, desc.value)"
+            routerLink="/">Save</button>
+    </div>
+</div>

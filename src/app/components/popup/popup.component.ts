@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { NotesService } from 'src/app/services/notes.service';
 
 @Component({
@@ -8,10 +9,11 @@ import { NotesService } from 'src/app/services/notes.service';
 })
 export class PopupComponent {
 
-  constructor(private notesService: NotesService) { }
+  constructor(private notesService: NotesService, private router: Router) { }
 
   addNote(title: string, desc: string) {
-    this.notesService.insertNote(title, desc)
+    this.notesService.insertNote(title, desc).subscribe(() => {
+      this.router.navigate(['/'])
+    })
   }
-
 }

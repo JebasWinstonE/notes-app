@@ -11,6 +11,8 @@ import { NoteComponent } from './components/note/note.component';
 import { PopupComponent } from './components/popup/popup.component';
 import { ShrinkPipe } from './pipes/shrink.pipe';
 import { FactsComponent } from './components/facts/facts.component';
+import { EditComponent } from './components/edit/edit.component';
+import ForDirective from './directives/for.directive';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,10 @@ import { FactsComponent } from './components/facts/facts.component';
     NotesComponent,
     NoteComponent,
     PopupComponent,
-    ShrinkPipe,
-    FactsComponent
+    FactsComponent,
+    EditComponent,
+    ForDirective,
+    ShrinkPipe
   ],
   imports: [
     BrowserModule,

@@ -2,10 +2,12 @@
     <app-facts *ngIf="flag" (showFactEvent)="factStatus($event)"></app-facts>
 </div>
 <div class="container">
-    <div *ngIf="notes$ | async as notes">
-        <div class="note" *ngFor="let note of notes">
-            <app-note [note]="note"></app-note>
-        </div>
+    <div class="notes" *ngIf="notes$ | async as notes">
+        <a href="" *ngFor="let note of notes">
+            <div class="note">
+                <app-note [note]="note"></app-note>
+            </div>
+        </a>
     </div>
     <button routerLink="/notes/new"><img src="assets/plus.svg" alt="add"></button>
 </div>

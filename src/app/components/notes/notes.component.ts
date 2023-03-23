@@ -21,6 +21,8 @@ export class NotesComponent {
 
   ngOnInit() {
     this.notes$ = this.notesService.getAllNotes();
+    console.log('Calling Data in Notes');
+
   }
 
   factStatus(value: boolean) {
