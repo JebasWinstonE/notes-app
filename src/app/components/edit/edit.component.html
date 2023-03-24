@@ -1,18 +1,18 @@
-<div class="container">
+<div class="container" *ngIf="note$ | async as note">
     <div class="header">
         <p>Edit Note</p>
     </div>
     <div class="title">
         <p>Title</p>
-        <input type="text" #title required>
+        <input type="text" #title required [value]="note.title">
     </div>
     <div class="content">
         <p>Description</p>
-        <textarea cols="30" rows="10" #desc></textarea>
+        <textarea cols="30" rows="10" #desc [value]="note.description"></textarea>
     </div>
     <div class="actions">
         <button style="background-color: lightcoral;" routerLink="/">Cancel</button>
-        <button style="background-color: rgb(86, 214, 86);" (click)="addNote(title.value, desc.value)"
-            routerLink="/">Save</button>
+        <button style="background-color: rgb(86, 214, 86);"
+            (click)="updateNote(title.value, desc.value, id)">Submit</button>
     </div>
 </div>

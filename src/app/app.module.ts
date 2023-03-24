@@ -13,6 +13,7 @@ import { ShrinkPipe } from './pipes/shrink.pipe';
 import { FactsComponent } from './components/facts/facts.component';
 import { EditComponent } from './components/edit/edit.component';
 import ForDirective from './directives/for.directive';
+import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import ForDirective from './directives/for.directive';
     FactsComponent,
     EditComponent,
     ForDirective,
-    ShrinkPipe
+    ShrinkPipe,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

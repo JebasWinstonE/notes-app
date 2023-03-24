@@ -15,10 +15,15 @@
 } */
 
 .notes {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  justify-content: space-around;
-  width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, 300px); */
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
+.note {
+  margin: auto;
 }
 
 button {

@@ -15,16 +15,13 @@ export class NotesComponent {
   //   console.log(this.popUp);
   // }
   flag: boolean = true;
-  notes$: Observable<Note[]> = new Observable
+  notes$: Observable<Note[]> = new Observable();
 
   constructor(private notesService: NotesService) { }
 
   ngOnInit() {
     this.notes$ = this.notesService.getAllNotes();
-    console.log('Calling Data in Notes');
-
   }
-
   factStatus(value: boolean) {
     this.flag = value
   }

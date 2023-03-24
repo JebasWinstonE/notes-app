@@ -3,13 +3,13 @@
 </div>
 <div class="container">
     <div class="notes" *ngIf="notes$ | async as notes">
-        <a href="" *ngFor="let note of notes">
+        <a [routerLink]="['/note', note.id]" *ngFor="let note of notes">
             <div class="note">
                 <app-note [note]="note"></app-note>
             </div>
         </a>
     </div>
-    <button routerLink="/notes/new"><img src="assets/plus.svg" alt="add"></button>
+    <button routerLink="/note/new"><img src="assets/plus.svg" alt="add"></button>
 </div>
 <div class="pop-up">
     <router-outlet></router-outlet>

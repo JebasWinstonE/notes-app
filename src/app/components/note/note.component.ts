@@ -9,5 +9,5 @@ import { NotesService } from 'src/app/services/notes.service';
 })
 export class NoteComponent {
   constructor(private notesService: NotesService) { }
-  @Input() note: Note;
+  @Input() note: Note = new Note('', '');
 }
