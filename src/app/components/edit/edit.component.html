@@ -1,4 +1,23 @@
-<div class="container" *ngIf="note$ | async as note">
+<form class="container" [formGroup]="formGroup" (ngSubmit)="updateNote()">
+    <div class="header">
+        <p>Edit Note</p>
+    </div>
+    <div class="title">
+        <label for="title">Title</label>
+        <input id="title" type="text" formControlName="title" placeholder="Title" #title>
+        <small *ngIf="formGroup.invalid" [ngClass]="{ 'error': (!formGroup.valid) }">*title shouldn't be empty</small>
+    </div>
+    <div class="content">
+        <label for="description">Description</label>
+        <textarea id="description" cols="30" rows="10" formControlName="description" placeholder="Write here..."
+            #desc></textarea>
+    </div>
+    <div class="actions">
+        <button style="background-color: lightcoral;" routerLink="/">Cancel</button>
+        <button style="background-color: rgb(86, 214, 86);">Submit</button>
+    </div>
+</form>
+<!-- <div class="container" *ngIf="note$ | async as note">
     <div class="header">
         <p>Edit Note</p>
     </div>
@@ -15,4 +34,4 @@
         <button style="background-color: rgb(86, 214, 86);"
             (click)="updateNote(title.value, desc.value, id)">Submit</button>
     </div>
-</div>
+</div> -->

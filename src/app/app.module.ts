@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http'
-
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
@@ -12,7 +13,6 @@ import { PopupComponent } from './components/popup/popup.component';
 import { ShrinkPipe } from './pipes/shrink.pipe';
 import { FactsComponent } from './components/facts/facts.component';
 import { EditComponent } from './components/edit/edit.component';
-import ForDirective from './directives/for.directive';
 import { ErrorComponent } from './components/error/error.component';
 
 @NgModule({
@@ -25,14 +25,15 @@ import { ErrorComponent } from './components/error/error.component';
     PopupComponent,
     FactsComponent,
     EditComponent,
-    ForDirective,
     ShrinkPipe,
     ErrorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,7 +14,7 @@ export class NotesComponent {
   //   this.popUp = !this.popUp
   //   console.log(this.popUp);
   // }
-  flag: boolean = true;
+
   notes$: Observable<Note[]> = new Observable();
 
   constructor(private notesService: NotesService) { }
@@ -22,7 +22,5 @@ export class NotesComponent {
   ngOnInit() {
     this.notes$ = this.notesService.getAllNotes();
   }
-  factStatus(value: boolean) {
-    this.flag = value
-  }
+
 }

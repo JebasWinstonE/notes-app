@@ -6,4 +6,9 @@ import { NotesService } from 'src/app/services/notes.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent { }
+export class HomeComponent {
+  flag: boolean = true;
+  factStatus(value: boolean) {
+    this.flag = value
+  }
+}

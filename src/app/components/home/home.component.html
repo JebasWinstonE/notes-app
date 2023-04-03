@@ -1,2 +1,5 @@
 <app-header></app-header>
+<div class="facts">
+    <app-facts *ngIf="flag" (showFactEvent)="factStatus($event)"></app-facts>
+</div>
 <app-notes></app-notes>

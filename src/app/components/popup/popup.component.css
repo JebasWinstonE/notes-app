@@ -45,6 +45,13 @@ input {
   font-size: medium;
 }
 
+.error {
+  color: red;
+  margin: 0 10px;
+  font-size: small;
+  padding: 5px;
+}
+
 .content {
   font-size: 20px;
   display: flex;

@@ -46,7 +46,9 @@ export class NotesService {
 
   //* Update Note
   updateNote(title: string, desc: string, id: string) {
-    console.log(id, title, desc)
+    if (title.length == 0 && desc.length == 0) {
+      return this.http.delete<Note>('https://my-notes-55-default-rtdb.firebaseio.com/notes/' + id + '.json')
+    }
     return this.http.put<Note>('https://my-notes-55-default-rtdb.firebaseio.com/notes/' + id + '.json', new Note(title, desc))
   }
 
